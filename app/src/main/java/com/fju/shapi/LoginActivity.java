@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         email = edEmail.getText().toString();
         password = edPassword.getText().toString();
 
-        if("12345".equals(email) && "12345".equals(password)){
+        if("666".equals(email) && "666".equals(password)){
             getSharedPreferences("login",MODE_PRIVATE)
                     .edit()
                     .putString("Email",email)
@@ -55,11 +55,11 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }else {
-//            edAlert.setText("xxx");
-            Toast xToast = Toast.makeText(this,"xxx登入失敗xxx",Toast.LENGTH_LONG);
+//            edAlert.setText("GG");
+            Toast xToast = Toast.makeText(this,"登入失敗",Toast.LENGTH_LONG);
             xToast.setGravity(Gravity.TOP|Gravity.LEFT, 10, 850);
             xToast.show();
-           // Toast.makeText(this, "xxx", Toast.LENGTH_LONG).show();
+           // Toast.makeText(this, "GG(toast)", Toast.LENGTH_LONG).show();
             edEmail.setText("");
             edPassword.setText("");
         }
